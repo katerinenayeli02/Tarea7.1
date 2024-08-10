@@ -29,96 +29,96 @@ html(lang='en')
 
         // Main Content
         main.mb-4
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.justify-content-center
-                    .col-md-10.col-lg-8.col-xl-7
-                        p
-                            | Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!
+                .container.px-4.px-lg-5
+                    .row.gx-4.gx-lg-5.justify-content-center
+                        .col-md-10.col-lg-8.col-xl-7
+                            p
+                                | Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!
 
-                        .my-5
+                            .my-5
 
-                            // * * * * * * * * * * * * * * *
-                            // * * SB Forms Contact Form * *
-                            // * * * * * * * * * * * * * * *
+                                // * * * * * * * * * * * * * * *
+                                // * * SB Forms Contact Form * *
+                                // * * * * * * * * * * * * * * *
 
-                            // This form is pre-integrated with SB Forms.
-                            // To make this form functional, sign up at
-                            // https://startbootstrap.com/solution/contact-forms
-                            // to get an API token!
+                                // This form is pre-integrated with SB Forms.
+                                // To make this form functional, sign up at
+                                // https://startbootstrap.com/solution/contact-forms
+                                // to get an API token!
 
-                            form#contactForm(data-sb-form-api-token='API_TOKEN')
-                                .form-group.row
-                                    label.col-sm-2.col-form-label(for='name') Nombre
-                                        .invalid-feedback(data-sb-feedback='name:required')
-                                            | A name is required.
-                                    input#name.col-sm-10.form-control(
-                                        type='text',
-                                        placeholder='Enter your name...',
-                                        data-sb-validations='required'
-                                    )
-                                .form-group.row
-                                    label.col-sm-2.col-form-label(for='email') Email
-                                    .invalid-feedback(data-sb-feedback='email:required')
-                                        | An email is required.
-                                    .invalid-feedback(data-sb-feedback='email:email')
-                                        | Email is not valid.
-                                    input#email.col-sm-10.form-control(
-                                        type='email',
-                                        placeholder='Enter your email...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .form-group.row
-                                    label.col-sm-2.col-form-label(for='sex') Sex
-                                    .form-check.col-sm-10
-                                        input#man.form-check-input(
-                                            type='radio',
-                                            name='sex',
-                                            value='Man',
-                                            checked=true
+                                form#contactForm(data-sb-form-api-token='API_TOKEN')
+                                    .form-group.row
+                                        label.col-sm-2.col-form-label(for='name') Nombre
+                                            .invalid-feedback(data-sb-feedback='name:required')
+                                                | A name is required.
+                                        input#name.col-sm-10.form-control(
+                                            type='text',
+                                            placeholder='Enter your name...',
+                                            data-sb-validations='required'
                                         )
-                                        label.form-check-label(for='man') Man
-                                        br
-                                        input#woman.form-check-input(
-                                            type='radio',
-                                            name='sex',
-                                            value='Woman',
-                                            checked=false
+                                    .form-group.row
+                                        label.col-sm-2.col-form-label(for='email') Email
+                                        .invalid-feedback(data-sb-feedback='email:required')
+                                            | An email is required.
+                                        .invalid-feedback(data-sb-feedback='email:email')
+                                            | Email is not valid.
+                                        input#email.col-sm-10.form-control(
+                                            type='email',
+                                            placeholder='Enter your email...',
+                                            data-sb-validations='required,email'
                                         )
-                                        label.form-check-label(for='woman') Woman
-                                .form-group.row
-                                    label.col-sm-2.col-form-label(for='message') Text
-                                    .invalid-feedback(data-sb-feedback='message:required')
-                                        | A message is required.
-                                    textarea#message.col-sm-10.form-control(
-                                        placeholder='Enter your message here...',
-                                        style='height: 12rem;',
-                                        data-sb-validations='required'
-                                    )
+                                    .form-group.row
+                                        label.col-sm-2.col-form-label(for='sex') Sex
+                                        .form-check.col-sm-10
+                                            input#man.form-check-input(
+                                                type='radio',
+                                                name='sex',
+                                                value='Man',
+                                                checked=true
+                                            )
+                                            label.form-check-label(for='man') Man
+                                            br
+                                            input#woman.form-check-input(
+                                                type='radio',
+                                                name='sex',
+                                                value='Woman',
+                                                checked=false
+                                            )
+                                            label.form-check-label(for='woman') Woman
+                                    .form-group.row
+                                        label.col-sm-2.col-form-label(for='message') Text
+                                        .invalid-feedback(data-sb-feedback='message:required')
+                                            | A message is required.
+                                        textarea#message.col-sm-10.form-control(
+                                            placeholder='Enter your message here...',
+                                            style='height: 12rem;',
+                                            data-sb-validations='required'
+                                        )
 
-                                br
+                                    br
 
-                                // Submit success message
-                                //
-                                // This is what your users will see when the form
-                                // has successfully submitted
+                                    // Submit success message
+                                    //
+                                    // This is what your users will see when the form
+                                    // has successfully submitted
 
-                                #submitSuccessMessage.d-none
-                                    .text-center.mb-3
-                                        .fw-bolder Form submission successful!
-                                        | To activate this form, sign up at
-                                        br
-                                        a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                                    #submitSuccessMessage.d-none
+                                        .text-center.mb-3
+                                            .fw-bolder Form submission successful!
+                                            | To activate this form, sign up at
+                                            br
+                                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                                // Submit error message
-                                //
-                                // This is what your users will see when there is
-                                // an error submitting the form
+                                    // Submit error message
+                                    //
+                                    // This is what your users will see when there is
+                                    // an error submitting the form
 
-                                #submitErrorMessage.d-none
-                                    .text-center.text-danger.mb-3 Error sending message!
+                                    #submitErrorMessage.d-none
+                                        .text-center.text-danger.mb-3 Error sending message!
 
-                                // Submit Button
-                                button#submitButton.btn.btn-primary.text-uppercase.disabled(type='submit') Send
+                                    // Submit Button
+                                    button#submitButton.btn.btn-primary.text-uppercase.disabled(type='submit') Send
 
         include includes/footer.pug
 
